@@ -2,6 +2,8 @@
 
 
 * [Version 2](./deep-research-agents-v2)
+* [Version 3](./deep-research-agents-v3)
+
 
 
 
