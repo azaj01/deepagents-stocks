@@ -1,3 +1,9 @@
+# 🧠 Deep Research Agents — Version 3 (V3) Setup Guide
+
+This guide explains how to start the **LangSmith server** for Deep Research Agents V3 and connect it with the **Deep Agents UI**.
+
+---
+
 ## ▶️ How to Run
 
 1. **Clone the repository:**
