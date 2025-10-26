@@ -1,0 +1,15 @@
+langchain==0.3.27
+langchain-core==0.3.79
+langchain-text-splitters==0.3.11
+langgraph==0.6.10
+langgraph-checkpoint==2.1.2
+langgraph-prebuilt==0.6.4
+langgraph-sdk==0.2.9
+langsmith==0.4.34
+deepagents==0.0.5
+tavily-python==0.7.12
+langchain_community==0.3.27
+yfinance==0.2.65
+langchain-openai==0.3.30
+langchain-ollama==0.3.6
+langgraph-cli[inmem]
