@@ -1,32 +1,37 @@
-# 📊 Stock Research Agent – Version 2
+# 📊 Stock Research Agent — Version 3
 
 
 * [Version 2](./deep-research-agents-v2)
 * [Version 3](./deep-research-agents-v3)
 
 
-
-
 ## 🚀 Overview
 
-This is the **second version** of the Stock Research Agent built with Gradio, LangChain DeepAgents, and optional Brave/Tavily integration. It improves significantly over the first version by applying **context engineering**, simplifying configuration, and optimizing tool usage.
+This is the **third version (V3)** of the Stock Research Agent, built on top of the LangGraph + LangSmith ecosystem.  
+Version 3 brings a production-grade architecture with a modular backend and an interactive frontend powered by **Deep Agents UI**.
+
+It extends Version 2 by introducing real-time observability, agent collaboration, and a complete local deployment workflow.
+
+
+---
+## 📊 Version Comparison (V1 vs V2 vs V3)
+
+| Feature | Version 1 (Old) | Version 2 (Improved) | **Version 3 (New)** |
+|----------|----------------|----------------------|---------------------|
+| **Configuration** | Hardcoded in `.py` | `.env`, `.json`, `.md` external configs | Same as V2 |
+| **Search Provider** | Fixed to Brave | Optional Brave / Tavily (auto-selected) | Same as V2 |
+| **Sub-agents** | Defined inline in code | Externalized in `subagents.json` | Same as V2 |
+| **Core Instructions** | Inline (long) | Moved to `instructions.md` | Same as V2 |
+| **Token Usage per Query** | ~13 000 | ~3 500 | Same as V2 |
+| **Response Time** | Slow (bloated context) | 60–70 % faster (context engineered) | Same as V2 |
+| **UI** | Basic textbox | Markdown + Chat UI (Gradio) | **Integrated with Deep Agents UI via LangSmith Server** |
+| **Error Handling** | Minimal | Graceful fallbacks, provider status banners | Same as V2 |
+| **Backend Runtime** | Local Python | Gradio app | **LangGraph / LangSmith Server** |
+| **Deployment** | Manual | Scripted | Same as V2 + UI integration |
+| **Monitoring** | None | Console logs | **UI-based interaction through Deep Agents UI** |
 
 ---
 
-## 📊 Version Comparison (v1 vs v2)
-
-| Feature                   | Version 1 (Old)        | Version 2 (New)                             |
-| ------------------------- | ---------------------- | ------------------------------------------- |
-| **Configuration**         | Hardcoded in `.py`     | `.env`, `.json`, `.md` external configs     |
-| **Search Provider**       | Fixed to Brave         | Optional Brave/Tavily, auto-selected        |
-| **Subagents**             | Defined inline in code | Externalized in `subagents.json`            |
-| **Core Instructions**     | Inline (long)          | Moved to `instructions.md`                  |
-| **Token Usage per Query** | \~13,000               | \~3,500                                     |
-| **Response Time**         | Slow (bloated context) | 60–70% faster (context engineered)          |
-| **UI**                    | Basic textbox          | Markdown + Chat UI                          |
-| **Error Handling**        | Minimal                | Graceful fallbacks, provider status banners |
-
----
 
 ## 📉 Token Usage Optimization
 
