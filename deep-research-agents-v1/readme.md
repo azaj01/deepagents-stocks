@@ -70,7 +70,7 @@ This project demonstrates how to build advanced AI research capabilities using L
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/deepagent-stock-research.git
+   git clone https://github.com/sagar-n/deepagent-stock-research.git
    cd deepagent-stock-research
    ```
 
