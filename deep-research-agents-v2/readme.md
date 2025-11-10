@@ -3,7 +3,7 @@
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/your-username/stock-research-agent.git
+git clone https://github.com/sagar-n/stock-research-agent.git
 cd stock-research-agent
 ```
 
